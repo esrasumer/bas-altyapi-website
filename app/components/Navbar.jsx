@@ -25,13 +25,13 @@ function Navbar() {
                             <Link href='/#about'>Hakkımızda</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#skills'>Skills</Link>
+                            <Link href='/#skills'>Sertfikalar</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/#projects'>Projelerimiz</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/resume'>Resume</Link>
+                            <Link href='/resume'>Kariyer</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/#contact'>İletişim</Link>
