@@ -1,5 +1,5 @@
 import React from 'react'
-import basLogo from '../../public/assets/basAltYapiLogo.png'
+import basLogo from '../../public/assets/basAltYapiLogo.gif'
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -13,28 +13,28 @@ function Navbar() {
                         alt='/'
                         width='300'
                         height='300'
-                        className='cursor-pointer rounded-full'
+                        className='cursor-pointer'
                     />
                 </Link>
                 <div>
                     <ul className='hidden md:flex linkColor'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/'>Home</Link>
+                            <Link href='/'>Anasayfa</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#about'>About</Link>
+                            <Link href='/#about'>Hakkımızda</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/#skills'>Skills</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#projects'>Projects</Link>
+                            <Link href='/#projects'>Projelerimiz</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/resume'>Resume</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#contact'>Contact</Link>
+                            <Link href='/#contact'>İletişim</Link>
                         </li>
                     </ul>
                 </div>

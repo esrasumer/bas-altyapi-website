@@ -9,7 +9,7 @@ function About() {
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
-                        About
+                        Hakkımızda
                     </p>
                     <h2 className='py-4'>BAŞ ALTYAPI İNŞAAT ANONİM ŞİRKETİ</h2>
                     <p className='py-2 text-gray-600'>

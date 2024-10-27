@@ -7,11 +7,10 @@ import Map from '../app/components/Map';
 export default function Home() {
   return (
     <div>
-      {/* {/* <Navbar /> */}
-      {/* <About />  */}
-      {/* <Projects /> */}
+      <Navbar />
+      <About /> 
+      <Projects />
       <Contact />
-      {/* <Map /> */}
     </div>
   );
 }
