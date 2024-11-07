@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import ContactImg from '../../public/assets/about.jpg';
-import Map from './Map';
+import ContactImg from '../../../public/assets/about.jpg';
+import Map from '../Map';
+import './style.css'
 
 const Contact = () => {
   return (
@@ -80,8 +80,8 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
-                <button className='w-full p-4 text-gray-100 mt-4'>
-                  Send Message
+                <button className='w-full p-4 text-logoground-100 mt-4'>
+                  GÖNDER
                 </button>
               </form>
             </div>
