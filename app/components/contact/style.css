@@ -1,5 +1,5 @@
 body {
-    position: relative; /* Pseudo-elementin yerleşimi için gerekli */
+    position: relative; 
 }
 
 body::before {
@@ -7,12 +7,24 @@ body::before {
     background-image: url('../../../public/assets/background.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    opacity: 0.09; /* Burada opacity değerini istediğiniz gibi ayarlayabilirsiniz */
+    opacity: 0.09; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Arka planda kalmasını sağlar */
-    pointer-events: none; /* Üzerinde etkileşime izin vermez */
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+.sendButton{
+border:1px solid #002050;
+padding: 10px;
+border-radius: 24px;
+}
+
+.sendButton:hover{
+color:white;
+background-color: #002050;
+transform: scale(1.05);
 }

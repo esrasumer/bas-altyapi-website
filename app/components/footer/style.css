@@ -1,0 +1,11 @@
+
+.footerContainer{
+    margin-bottom: 0;
+    position:relative;
+    top: 300px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footerText{
+    font-size: 16px;
+}

@@ -80,7 +80,7 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
-                <button className='w-full p-4 text-logoground-100 mt-4'>
+                <button className='w-full p-4 text-logogrowhitund-100 mt-4 sendButton'>
                   GÖNDER
                 </button>
               </form>
