@@ -1,4 +1,4 @@
-import Navbar from '../app/components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import About from '../app/components/About';
 import Projects from '../app/components/Projects';
 import Contact from './components/contact/Contact';

@@ -18,6 +18,8 @@
 .text {
     font-weight: lighter;
     font-size: 24px;
+    text-align: center;
+    width: 90%;
 }
 
 .container-botton {
@@ -47,4 +49,17 @@
     opacity: 0.8;
     color: white;
     transform: scale(1.05);
+}
+
+@media(max-width:767px) {
+    .container{
+        gap:10px;
+    }
+   .title{
+    font-size: 24px;
+    width: 90%;
+   }
+   .text{
+    font-size:16px;
+   }
 }
