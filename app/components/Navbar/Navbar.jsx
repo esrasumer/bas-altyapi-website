@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 // import basLogo from '../../../public/assets/basAltYapiLogo.gif'
 import basLogo from '../../../public/assets/ag.png'
 import { RxHamburgerMenu } from "react-icons/rx";
