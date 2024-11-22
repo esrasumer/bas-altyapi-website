@@ -1,5 +1,4 @@
 import './style.css'
-import { FaWhatsapp } from 'react-icons/fa'
 
 export default function HomePage () {
   return (
