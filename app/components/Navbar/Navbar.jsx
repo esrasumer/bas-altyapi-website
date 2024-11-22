@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState } from 'react'
-// import basLogo from '../../../public/assets/basAltYapiLogo.gif'
-import basLogo from '../../../public/assets/ag.png'
+import basLogo from '../../../public/assets/basAltYapiLogo.gif'
+// import basLogo from '../../../public/assets/ag.png'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeFill } from "react-icons/ri";
 import NavbarMenu from './NavbarMenu'
