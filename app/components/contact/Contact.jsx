@@ -124,8 +124,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className='flex justify-center py-12'>
-        </div>
       </div>
     </div>
   );

@@ -1,65 +1,66 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .title {
-    width: 52%;
-    text-align: center;
-    line-height: 1.5;
-    white-space: pre-line;
-    color: #eec67a;
-    font-size: 36px;
-    font-weight: bold;
+  width: 52%;
+  text-align: center;
+  line-height: 1.5;
+  white-space: pre-line;
+  color: #eec67a;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .text {
-    font-weight: lighter;
-    font-size: 24px;
-    text-align: center;
-    width: 90%;
+  font-weight: lighter;
+  font-size: 24px;
+  text-align: center;
+  width: 90%;
 }
 
 .container-botton {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .text-callNumber {
-    border-width: 1px;
-    color: white;
-    background-color: #002050;
-    opacity: 0.8;
-    padding: 10px;
-}
-
-.text-phoneNumber {
-    border-width: 1px;
-    border-color: #002050;
-    color: #002050;
-    padding: 10px;
-    font-size: 20px;
+  border-width: 1px;
+  color: white;
+  background-color: #002050;
+  opacity: 0.8;
+  padding: 10px;
 }
 
 .text-phoneNumber:hover {
-    background-color: #002050;
-    opacity: 0.8;
-    color: white;
-    transform: scale(1.05);
+  background-color: #002050;
+  opacity: 0.8;
+  color: white;
+  transform: scale(1.05);
 }
 
-@media(max-width:767px) {
-    .container{
-        gap:10px;
-    }
-   .title{
+@media (max-width: 767px) {
+  .container {
+    gap: 10px;
+  }
+  .title {
     font-size: 24px;
     width: 90%;
-   }
-   .text{
-    font-size:16px;
-   }
+  }
+  .text {
+    font-size: 16px;
+  }
+
+  .text-callNumber {
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  .text-phoneNumber{
+    font-size: 14px;
+  }
 }
