@@ -1,0 +1,9 @@
+    .title {
+        width: 52%;
+        text-align: center;
+        line-height: 1.5;
+        white-space: pre-line;
+        color: #eec67a;
+        font-size: 36px;
+        font-weight: bold;
+      }
