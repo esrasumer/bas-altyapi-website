@@ -45,11 +45,6 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log('Form data:', formData)
-  }
-
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
