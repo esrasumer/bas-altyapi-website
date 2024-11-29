@@ -7,35 +7,52 @@ import Map from '../Map'
 import './style.css'
 
 const Contact = () => {
+  async function handleForm (event) {
+    event.preventDefault()
+    const formData = new FormData(event.target)
 
-  async function handleForm(event) {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+    formData.append('access_key', '977647fa-d2da-47b1-908b-379e76d485c5')
 
-    formData.append("access_key", "977647fa-d2da-47b1-908b-379e76d485c5");
+    const object = Object.fromEntries(formData)
+    const json = JSON.stringify(object)
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: json
+    })
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        },
-        body: json
-    });
-    const result = await response.json();
-    if (result.success) {
-        console.log(result);
+    try {
+      const result = await response.json()
+      if (result.success) {
+        setSuccessMessage('Mesajınız başarıyla gönderildi.')
+        setFormData({
+          name: '',
+          phoneNumber: '',
+          email: '',
+          subject: '',
+          message: ''
+        }) // Formu temizle
+      } else {
+        setSuccessMessage('Mesaj gönderilirken bir hata oluştu.')
+      }
+    } catch (error) {
+      setSuccessMessage('Mesaj gönderilemedi. Lütfen tekrar deneyin.')
     }
-}
+  }
 
   const [formData, setFormData] = useState({
     name: '',
     phoneNumber: '',
-    email: ''
+    email: '',
+    subject: '',
+    message: ''
   })
+
+  const [successMessage, setSuccessMessage] = useState('')
 
   const handleChange = e => {
     const { name, value } = e.target
@@ -128,6 +145,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='text'
                     name='subject'
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -136,6 +155,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows='10'
                     name='message'
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button
@@ -145,6 +166,9 @@ const Contact = () => {
                   GÖNDER
                 </button>
               </form>
+              {successMessage && (
+                <p className='text-green-600 mt-4'>{successMessage}</p>
+              )}
             </div>
           </div>
         </div>
