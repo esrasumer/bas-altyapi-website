@@ -10,7 +10,7 @@ import Merdiven from '../../../public/assets/ProjectImage/Image7.jpeg'
 import Kaldirim from '../../../public/assets/ProjectImage/Image8.jpeg'
 import Cimen from '../../../public/assets/ProjectImage/Image9.jpeg'
 import Boru from '../../../public/assets/ProjectImage/Image10.jpeg'
-import AltYapi from '../../../public/assets/ProjectImage/Image11.jpeg'
+// import AltYapi from '../../../public/assets/ProjectImage/Image11.jpeg'
 import { Carousel } from 'antd'
 import './style.css'
 
