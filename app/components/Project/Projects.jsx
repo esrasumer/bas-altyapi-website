@@ -4,6 +4,13 @@ import Imagecar from '../../../public/assets/ProjectImage/Image1.jpeg'
 import Tunel from '../../../public/assets/ProjectImage/Image2.jpeg'
 import Cukur from '../../../public/assets/ProjectImage/Image3.jpeg'
 import Bahce from '../../../public/assets/ProjectImage/Image4.jpeg'
+import Kuyu from '../../../public/assets/ProjectImage/Image5.jpeg'
+import Mazgal from '../../../public/assets/ProjectImage/Image6.jpeg'
+import Merdiven from '../../../public/assets/ProjectImage/Image7.jpeg'
+import Kaldirim from '../../../public/assets/ProjectImage/Image8.jpeg'
+import Cimen from '../../../public/assets/ProjectImage/Image9.jpeg'
+import Boru from '../../../public/assets/ProjectImage/Image10.jpeg'
+import AltYapi from '../../../public/assets/ProjectImage/Image11.jpeg'
 import { Carousel } from 'antd'
 import './style.css'
 
@@ -11,9 +18,8 @@ const contentStyle = {
   margin: 0,
   height: '640px',
   color: '#fff',
-  lineHeight: '600px',
   textAlign: 'center',
-  background: '#364d79'
+  background: '#364d79',
 }
 function Projects () {
   return (
@@ -27,29 +33,71 @@ function Projects () {
           ulaşmanız yeterli.
         </h2>
 
-        <Carousel className='slider-wrapper' arrows infinite={false}>
+        <Carousel  className='slider-wrapper' arrows infinite={false}>
           <div>
-            <h3 style={contentStyle}>
+            <div  style={contentStyle}>
+              <div className='slider'>
+                <Image
+                  src={Mazgal}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                  padding='500'
+                />{' '}
+                <Image
+                  src={Bahce}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                />{' '}
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style={contentStyle}>
               <div className='slider'>
                 <Image
                   src={Imagecar}
                   alt='/'
-                  width='300'
-                  height='300'
+                  width='500'
+                  height='500'
                   className='slide'
-                  padding='300'
+                  padding='500'
                 />{' '}
                 <Image
                   src={Tunel}
                   alt='/'
-                  width='440'
-                  height='440'
+                  width='500'
+                  height='500'
                   className='slide'
                 />{' '}
               </div>
-            </h3>
+            </div>
           </div>
           <div>
+            <div style={contentStyle}>
+              <div className='slider'>
+                <Image
+                  src={Merdiven}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                  padding='500'
+                />{' '}
+                <Image
+                  src={Kuyu}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                />{' '}
+              </div>
+            </div>
+          </div>
+          <div className='container'>
             <h3 style={contentStyle}>
               <div className='slider'>
                 <Image
@@ -60,7 +108,7 @@ function Projects () {
                   className='slide'
                 />{' '}
                 <Image
-                  src={Bahce}
+                  src={Kaldirim}
                   alt='/'
                   width='500'
                   height='500'
@@ -68,6 +116,27 @@ function Projects () {
                 />
               </div>
             </h3>
+          </div>
+          <div>
+            <div style={contentStyle}>
+              <div className='slider'>
+                <Image
+                  src={Cimen}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                  padding='500'
+                />{' '}
+                <Image
+                  src={Boru}
+                  alt='/'
+                  width='500'
+                  height='500'
+                  className='slide'
+                />{' '}
+              </div>
+            </div>
           </div>
         </Carousel>
       </div>
