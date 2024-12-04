@@ -10,7 +10,7 @@ import Kuyu from '../../../public/assets/ProjectImage/Image5.jpeg'
 import Mazgal from '../../../public/assets/ProjectImage/Image6.jpeg'
 import Merdiven from '../../../public/assets/ProjectImage/Image7.jpeg'
 import Kaldirim from '../../../public/assets/ProjectImage/Image8.jpeg'
-import Cimen from '../../../public/assets/ProjectImage/Image9.jpeg'
+import Agac from '../../../public/assets/ProjectImage/Image12.jpeg'
 import Boru from '../../../public/assets/ProjectImage/Image10.jpeg'
 // import AltYapi from '../../../public/assets/ProjectImage/Image11.jpeg'
 import { Carousel } from 'antd'
@@ -59,7 +59,7 @@ function Projects() {
     [Imagecar, Tunel],
     [Merdiven, Kuyu],
     [Cukur, Kaldirim],
-    [Boru, Cimen],
+    [Boru, Agac],
   ]
 
   const mobileSlides = slides.flat().map((image) => [image])
