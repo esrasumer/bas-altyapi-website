@@ -30,7 +30,7 @@ function Navbar () {
             className='basLogoContiner cursor-pointer'
           />
         </Link>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <div className='menuLogo' onClick={handleNav}>
           <RxHamburgerMenu size={25} />
         </div>
