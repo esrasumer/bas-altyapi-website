@@ -40,6 +40,7 @@ const Contact = () => {
         setSuccessMessage('Mesaj gönderilirken bir hata oluştu.')
       }
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSuccessMessage('Mesaj gönderilemedi. Lütfen tekrar deneyin.')
     }
   }
