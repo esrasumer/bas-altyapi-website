@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import ContactImg from '../../../public/assets/about.jpg'
+import Cimen from '../../../public/assets/ProjectImage/Image9.jpeg'
 import Map from '../Map'
 import './style.css'
 
@@ -73,7 +73,7 @@ const Contact = () => {
               <div>
                 <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={ContactImg}
+                  src={Cimen}
                   alt='/'
                 />
               </div>
