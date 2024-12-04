@@ -35,7 +35,7 @@ const Contact = () => {
           email: '',
           subject: '',
           message: ''
-        }) // Formu temizle
+        })
       } else {
         setSuccessMessage('Mesaj gönderilirken bir hata oluştu.')
       }
@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-        <p className='text-xl tracking-widest text-[#5651e5]'>BİZE ULAŞIN</p>
+        <p className='textAbout text-xl tracking-widest text-[#5651e5]'>BİZE ULAŞIN</p>
         <div className='grid lg:grid-cols-5 gap-8'>
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
