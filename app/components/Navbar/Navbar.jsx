@@ -10,7 +10,7 @@ import NavbarMenu from './NavbarMenu'
 import Link from 'next/link'
 import Image from 'next/image'
 import './style.css'
-import ThemeSwitch from '../ThemeProvider/ThemeSwitch'
+// import ThemeSwitch from '../ThemeProvider/ThemeSwitch'
 
 function Navbar () {
   const [nav, setNav] = useState(false)
