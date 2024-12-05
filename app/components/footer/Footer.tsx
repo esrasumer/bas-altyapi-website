@@ -1,12 +1,32 @@
 import './style.css'
 
-export default function Footer(){
-    return(
-        <div className="container footerContainer">
-            <div>BAŞ ALTYAPI İNŞAAT SAN.TİC.LTD.ŞTİ </div>
-            <div className='footerText'>info@basaltyapi.com</div>
-            <div className='relative footerText'>0500 239 31 22</div>
-            <div className='relative footerText'>©2023, Başaltyapı tarafından sümerdev.com ile kurulmuştur.</div>
-        </div>
-    )
+export default function Footer () {
+  return (
+    <footer className='container footerContainer'>
+      <div>
+        <p className='footerCompanyName'>BAŞ ALTYAPI İNŞAAT SAN.TİC.LTD.ŞTİ</p>
+      </div>
+      <address className='footerAddress'>
+        <a href='mailto:info@basaltyapi.com' className='footerText'>
+          info@basaltyapi.com
+        </a>
+        <p className='footerText'>
+          <a href='tel:05002393122'>0500 239 31 22</a>
+        </p>
+      </address>
+
+      {/* Telif Hakkı */}
+      <div className='footerText'>
+        <p>©2023, Başaltyapı tarafından</p>
+        <a
+          href='https://sumerdev.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          sümerdev.com
+        </a>{' '}
+        ile kurulmuştur.
+      </div>
+    </footer>
+  )
 }

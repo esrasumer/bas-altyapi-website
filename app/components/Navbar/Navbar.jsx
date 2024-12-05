@@ -1,108 +1,81 @@
 'use client'
 
 import React, { useState } from 'react'
-// import basLogo from '../../../public/assets/basAltYapiLogo.gif'
-import basLogo from '../../../public/assets/basYapıLogo.png'
-// import basLogo from '../../../public/assets/ag.png'
+import Image from 'next/image'
+import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { RiCloseLargeFill } from 'react-icons/ri'
 import NavbarMenu from './NavbarMenu'
-import Link from 'next/link'
-import Image from 'next/image'
 import './style.css'
-// import ThemeSwitch from '../ThemeProvider/ThemeSwitch'
 
-function Navbar () {
+function Navbar() {
   const [nav, setNav] = useState(false)
+
   const handleNav = () => {
     setNav(!nav)
   }
 
   return (
-    <div className='container'>
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
+    <header className="container">
+      <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <Link href="/" aria-label="Home">
           <Image
-            src={basLogo}
-            alt='/'
-            width='300'
-            height='300'
-            className='basLogoContiner cursor-pointer'
+            src="/assets/basYapıLogo.png"
+            alt="Bas Yapı Logo"
+            width={300}
+            height={300}
+            className="basLogoContiner cursor-pointer"
+            priority // SEO için önemli: Sayfa yüklendiğinde logonun öncelikli yüklenmesini sağlar
           />
         </Link>
-        {/* <ThemeSwitch /> */}
-        <div className='menuLogo' onClick={handleNav}>
+        <div className="menuLogo" onClick={handleNav} aria-label="Toggle navigation menu">
           <RxHamburgerMenu size={25} />
         </div>
         <NavbarMenu />
-      </div>
-      <div
-        className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
-        }
-      >
+      </nav>
+
+      {/* Mobile Menu */}
+      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
-          <div>
-            {/* <Link href='/'>
-                    <Image
-                        src={basLogo}
-                        width='87'
-                        height='35'
-                        alt='/'
-                    />
-            </Link> */}
-            <div className='flex w-full items-center'>
-              <div
-                onClick={handleNav}
-                className='rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer'
-              >
-                <RiCloseLargeFill />
-              </div>
-            </div>
+          {/* Close Button */}
+          <div className="flex w-full items-center">
+            <button
+              onClick={handleNav}
+              className="rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer"
+              aria-label="Close menu"
+            >
+              <RiCloseLargeFill />
+            </button>
           </div>
-          <div className='py-4 flex flex-col'>
-            <ul className='uppercase'>
-              <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Home
+
+          {/* Navigation Links */}
+          <div className="py-4 flex flex-col">
+            <ul className="uppercase">
+              {[
+                { href: '/', label: 'Home' },
+                { href: '/#about', label: 'About' },
+                { href: '/#skills', label: 'Skills' },
+                { href: '/#projects', label: 'Projects' },
+                { href: '/resume', label: 'Resume' },
+                { href: '/#contact', label: 'Contact' },
+              ].map((link) => (
+                <li key={link.href} onClick={() => setNav(false)} className="py-4 text-sm">
+                  <Link href={link.href}>
+                    <div aria-label={`Navigate to ${link.label}`}>{link.label}</div>
+                  </Link>
                 </li>
-              </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
-                </li>
-              </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
-                </li>
-              </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
-                </li>
-              </Link>
-              <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
-                </li>
-              </Link>
-              <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
-                </li>
-              </Link>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 
