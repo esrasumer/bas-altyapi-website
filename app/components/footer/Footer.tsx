@@ -14,8 +14,6 @@ export default function Footer () {
           <a href='tel:05002393122'>0500 239 31 22</a>
         </p>
       </address>
-
-      {/* Telif Hakkı */}
       <div className='footerText'>
         <p>©2023, Başaltyapı tarafından</p>
         <a
