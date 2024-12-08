@@ -1,22 +1,14 @@
-.background {
-    border: 2px solid red;
+.menuLogo {
+  display: none;
+  margin-left: auto;
 }
 
-.menuLogo{
-    display: none;
-    margin-left: auto;
-}
+@media (max-width: 767px) {
+  .basLogoContiner {
+    width: 60%;
+  }
 
-@media(max-width:767px) {
-    .background {
-        border: 2px solid aquamarine;
-    }
-
-    .basLogoContiner {
-        width: 60%;
-    }
-    
-    .menuLogo{
-        display: block;
-    }
+  .menuLogo {
+    display: block;
+  }
 }
