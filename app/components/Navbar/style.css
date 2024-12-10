@@ -1,3 +1,9 @@
+.navbarContainer{
+  padding: 32px 16px;
+  background-color: #2c5694;
+  color: white;
+}
+
 .menuLogo {
   display: none;
   margin-left: auto;

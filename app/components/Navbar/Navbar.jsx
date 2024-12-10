@@ -15,18 +15,28 @@ function Navbar () {
     setNav(!nav)
   }
 
+  const List =[
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/#skills', label: 'Skills' },
+    { href: '/#projects', label: 'Projects' },
+    { href: '/resume', label: 'Resume' },
+    { href: '/#contact', label: 'Contact' }
+  ]
+
   return (
-    <header className='container'>
+    <header className='container header'>
       <nav className='navbarContainer flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/' aria-label='Home'>
-          <Image
+          {/* <Image
             src='/assets/basYapıLogo.png'
             alt='Bas Yapı Logo'
             width={200}
             height={300}
             className='basLogoContiner cursor-pointer'
             priority // SEO için önemli: Sayfa yüklendiğinde logonun öncelikli yüklenmesini sağlar
-          />
+          /> */}
+          LOGO
         </Link>
         <div
           className='menuLogo'
@@ -65,14 +75,7 @@ function Navbar () {
           {/* Navigation Links */}
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              {[
-                { href: '/', label: 'Home' },
-                { href: '/#about', label: 'About' },
-                { href: '/#skills', label: 'Skills' },
-                { href: '/#projects', label: 'Projects' },
-                { href: '/resume', label: 'Resume' },
-                { href: '/#contact', label: 'Contact' }
-              ].map(link => (
+              {List.map(link => (
                 <li
                   key={link.href}
                   onClick={() => setNav(false)}
