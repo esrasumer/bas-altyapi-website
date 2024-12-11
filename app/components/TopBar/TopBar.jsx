@@ -4,7 +4,7 @@ import CallNumber from './CallNumber'
 import {
   InstagramOutlined,
   FacebookOutlined,
-  WhatsAppOutlined,
+  WhatsAppOutlined
 } from '@ant-design/icons'
 
 function TopBar () {
@@ -12,11 +12,11 @@ function TopBar () {
     <div className='containerTopBar'>
       <CallNumber />
       <div className='notification'>
-        <div className='email'>basaltyapi@gmail.com</div>
+        <div className='email hidden md:block'>basaltyapi@gmail.com</div>
         <div className='socialmedia'>
-          <InstagramOutlined style={{ color: '#002050', fontSize: '24px' }}/>
-          <FacebookOutlined style={{ color: '#002050', fontSize: '24px' }}/>
-          <WhatsAppOutlined style={{ color: '#002050', fontSize: '24px' }}/>
+          <InstagramOutlined style={{ color: '#002050', fontSize: '24px' }} />
+          <FacebookOutlined style={{ color: '#002050', fontSize: '24px' }} />
+          <WhatsAppOutlined style={{ color: '#002050', fontSize: '24px' }} />
         </div>
       </div>
     </div>
