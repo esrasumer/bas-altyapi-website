@@ -1,4 +1,4 @@
-.navbarContainer{
+.navbarContainer {
   padding: 32px 16px;
   background-color: #2c5694;
   color: white;
@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 767px) {
+  .navbarContainer {
+    padding: 24px 12px;
+  }
   .basLogoContiner {
     width: 60%;
   }

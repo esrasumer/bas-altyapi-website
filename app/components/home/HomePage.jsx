@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Whatsapp from '../../../public/assets/whatsapp.gif'
 import './style.css'
 
 export default function HomePage () {
@@ -26,9 +27,9 @@ export default function HomePage () {
             aria-label='WhatsApp üzerinden bizimle iletişime geçin'
           >
             <Image
-              width={152}
-              height={152}
-              src='https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg'
+              width={122}
+              height={122}
+              src={Whatsapp}
               alt='WhatsApp İkonu'
             />
           </a>
