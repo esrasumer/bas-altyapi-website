@@ -5,7 +5,6 @@ import {
   InstagramOutlined,
   FacebookOutlined,
   WhatsAppOutlined,
-  PhoneOutlined
 } from '@ant-design/icons'
 
 function TopBar () {
