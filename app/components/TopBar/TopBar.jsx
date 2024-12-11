@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import CallNumber from './CallNumber'
 import {
   InstagramOutlined,
   FacebookOutlined,
@@ -10,16 +11,13 @@ import {
 function TopBar () {
   return (
     <div className='containerTopBar'>
-      <div className='callNumber'>
-        <PhoneOutlined />
-       <p> +09 0551 052 95 16</p>
-      </div>
+      <CallNumber />
       <div className='notification'>
         <div className='email'>basaltyapi@gmail.com</div>
         <div className='socialmedia'>
-          <InstagramOutlined />
-          <FacebookOutlined />
-          <WhatsAppOutlined />
+          <InstagramOutlined style={{ color: '#002050', fontSize: '24px' }}/>
+          <FacebookOutlined style={{ color: '#002050', fontSize: '24px' }}/>
+          <WhatsAppOutlined style={{ color: '#002050', fontSize: '24px' }}/>
         </div>
       </div>
     </div>
