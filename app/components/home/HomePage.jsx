@@ -16,9 +16,6 @@ export default function HomePage () {
         PARKURU İLE HİZMETİNİZDEYİZ
       </p>
       <section className='container-botton'>
-        <p className='text-callNumber'>
-          FİYAT TEKLİFİ VE BİLGİ İÇİN ARAYABİLİRSİNİZ
-        </p>
         <div className='whatsapp-icon'>
           <a
             href=' https://wa.me/905510529516'
@@ -27,8 +24,8 @@ export default function HomePage () {
             aria-label='WhatsApp üzerinden bizimle iletişime geçin'
           >
             <Image
-              width={122}
-              height={122}
+              width={96}
+              height={96}
               src={Whatsapp}
               alt='WhatsApp İkonu'
             />

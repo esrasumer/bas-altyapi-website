@@ -28,26 +28,11 @@
   gap: 32px;
 }
 
-.text-callNumber {
-  border-width: 1px;
-  color: white;
-  background-color: #002050;
-  opacity: 0.8;
-  padding: 10px;
-}
-
-.text-phoneNumber:hover {
-  background-color: #002050;
-  opacity: 0.8;
-  color: white;
-  transform: scale(1.05);
-}
-
 .whatsapp-icon {
   position: fixed;
   z-index: 1000;
-  right: 28px;
-  bottom: 28px;
+  right: 8px;
+  bottom: 16px;
 }
 
 @media (max-width: 767px) {
