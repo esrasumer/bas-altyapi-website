@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Imagecar from '../../../public/assets/ProjectImage/Image1.jpeg'
 import Tunel from '../../../public/assets/ProjectImage/Image2.jpeg'
@@ -26,15 +26,15 @@ const contentStyle = {
 const SliderItem = ({ images }) => {
   return (
     <div style={contentStyle}>
-      <div className="slider">
+      <div className='slider'>
         {images.map((src, index) => (
           <Image
             key={index}
             src={src}
-            alt="/"
-            width="500"
-            height="500"
-            className="slide"
+            alt='/'
+            width='500'
+            height='500'
+            className='slide'
           />
         ))}
       </div>
@@ -42,7 +42,7 @@ const SliderItem = ({ images }) => {
   )
 }
 
-function Projects() {
+function Projects () {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -59,10 +59,10 @@ function Projects() {
     [Imagecar, Tunel],
     [Merdiven, Kuyu],
     [Cukur, Kaldirim],
-    [Boru, Agac],
+    [Boru, Agac]
   ]
 
-  const mobileSlides = slides.flat().map((image) => [image])
+  const mobileSlides = slides.flat().map(image => [image])
 
   return (
     <div id='projects' className='w-full'>
@@ -76,7 +76,7 @@ function Projects() {
         </h2>
 
         <Carousel
-          className="slider-wrapper"
+          className='slider-wrapper'
           arrows
           infinite={false}
           showThumbs={false}

@@ -4,9 +4,10 @@ import React, { useState } from 'react'
 // import Image from 'next/image'
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { RiCloseLargeFill } from 'react-icons/ri'
+import { CloseOutlined } from '@ant-design/icons'
 import NavbarMenu from './NavbarMenu'
 import './style.css'
+import { NAVBAR_LINKS } from './contants.js'
 
 function Navbar () {
   const [nav, setNav] = useState(false)
@@ -15,17 +16,8 @@ function Navbar () {
     setNav(!nav)
   }
 
-  const List =[
-    { href: '/', label: 'Home' },
-    { href: '/#about', label: 'About' },
-    { href: '/#skills', label: 'Skills' },
-    { href: '/#projects', label: 'Projects' },
-    { href: '/resume', label: 'Resume' },
-    { href: '/#contact', label: 'Contact' }
-  ]
-
   return (
-    <header className='container header'>
+    <header className='container'>
       <nav className='navbarContainer flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/' aria-label='Home'>
           {/* <Image
@@ -62,20 +54,20 @@ function Navbar () {
           }
         >
           {/* Close Button */}
-          <div className='flex w-full items-center'>
+          <div className='flex w-full items-center pt-3'>
             <button
               onClick={handleNav}
-              className='rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer'
+              className='closeIcon rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer'
               aria-label='Close menu'
             >
-              <RiCloseLargeFill />
+              <CloseOutlined />
             </button>
           </div>
 
           {/* Navigation Links */}
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              {List.map(link => (
+              {NAVBAR_LINKS.map(link => (
                 <li
                   key={link.href}
                   onClick={() => setNav(false)}
