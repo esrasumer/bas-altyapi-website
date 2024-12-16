@@ -17,11 +17,11 @@ function Navbar () {
   }
 
   return (
-    <header className='container'>
+    <header className='mb-10'>
       <nav className='navbarContainer flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/' aria-label='Home'>
           {/* <Image
-            src='/assets/basYapıLogo.png'
+            src='/assets/basaltyapi-Photoroom.png'
             alt='Bas Yapı Logo'
             width={200}
             height={300}

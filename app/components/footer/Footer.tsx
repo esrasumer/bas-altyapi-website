@@ -2,7 +2,7 @@ import './style.css'
 
 export default function Footer () {
   return (
-    <footer className='container footerContainer'>
+    <footer className='footerContainer'>
       <div>
         <p className='footerCompanyName'>BAŞ ALTYAPI İNŞAAT SAN.TİC.LTD.ŞTİ</p>
       </div>

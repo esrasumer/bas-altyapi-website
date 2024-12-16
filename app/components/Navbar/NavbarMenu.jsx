@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { NAVBAR_LINKS } from './contants'
 
 export default function NavbarMenu () {
+  
   return (
     <nav aria-label='Primary Navigation'>
       <ul className='hidden md:flex linkColor'>
@@ -16,6 +17,7 @@ export default function NavbarMenu () {
           </li>
         ))}
       </ul>
+
     </nav>
   )
 }
