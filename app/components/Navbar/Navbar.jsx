@@ -60,7 +60,7 @@ function Navbar () {
     </button>
   </div>
 
-  {/* Navigation Links solved debug*/}
+  {/* Navigation Links solved debug kvfvjnwfjvgnrjgvn*/}
   <div className='py-4 flex flex-col'>
     <ul className='uppercase'>
       {NAVBAR_LINKS.map(link => (
