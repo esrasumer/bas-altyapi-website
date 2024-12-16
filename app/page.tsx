@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
+import Services from './components/Servis/Services';
 import Projects from './components/Project/Projects';
 import Contact from './components/contact/Contact';
 import HomePage from './components/home/HomePage'
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <HomePage />
       <About />
+      <Services />
       <Projects />
       <Contact />
       <Footer />

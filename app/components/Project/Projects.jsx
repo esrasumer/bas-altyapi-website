@@ -67,7 +67,7 @@ function Projects () {
   return (
     <div id='projects' className='w-full'>
       <div className='containerProject max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='textAbout text-xl tracking-widest uppercase text-[#5651e5]'>
+        <p className='textHead'>
           Projeler
         </p>
         <h2 className='textContainer py-4'>

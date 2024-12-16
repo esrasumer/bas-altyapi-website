@@ -82,7 +82,7 @@ const Contact = () => {
       </Head>
       <section id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-          <h1 className='textAbout text-xl tracking-widest text-[#5651e5]'>
+          <h1 className='textHead'>
             BİZE ULAŞIN
           </h1>
           <div className='grid lg:grid-cols-5 gap-8'>
