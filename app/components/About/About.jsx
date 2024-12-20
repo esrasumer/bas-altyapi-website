@@ -1,7 +1,7 @@
 import React from 'react'
-// import AboutImg from '../../../public/assets/about.jpg'
+import AboutImg from '../../../public/assets/about.jpg'
 import Link from 'next/link'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Text from './Text'
 import Head from 'next/head'
 import './style.css'
@@ -45,11 +45,11 @@ function About () {
             </Link>
           </div>
           <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-            {/* <Image
+            <Image
               src={AboutImg}
               className='rounded-xl'
               alt='Baş Altyapı İnşaat şirketine ait bina görseli'
-            /> */}
+            />
           </div>
         </div>
       </div>

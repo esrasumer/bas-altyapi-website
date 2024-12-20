@@ -11,7 +11,7 @@ export default function Footer () {
           info@basaltyapi.com
         </a>
         <p className='footerText'>
-          <a href='tel:05002393122'>0500 239 31 22</a>
+          <a href='tel:05002393122'>+90 551 052 95 16</a>
         </p>
       </address>
       <div className='footerText'>

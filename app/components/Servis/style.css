@@ -1,6 +1,18 @@
+.box{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+
+}
 .containerWrapper{
     background-color: #2c5694;
     color: white;
     padding: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .box{
+        flex-direction: column;
+    }
 }

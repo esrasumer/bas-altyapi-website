@@ -11,21 +11,21 @@ function Services () {
   ]
 
   return (
-    <div id='services' className='container'>
+    <div id='services' className='container pb-4'>
       <div>
         {' '}
         <p className='textHead'>Hizmetlerimiz</p>
       </div>
-      <div>
+      <div className='box'>
         {List.map((a, index) => (
           <ul key={index}>
-            <li>{a}</li>
+            <li className='containerWrapper'>{a}</li>
           </ul>
         ))}
       </div>
-      <div>
+      {/* <div>
         <p className='containerWrapper'>Detaylı bilgi için lütfen arayınız.</p>
-      </div>
+      </div> */}
     </div>
   )
 }
