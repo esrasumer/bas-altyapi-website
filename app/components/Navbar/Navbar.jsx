@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { CloseOutlined } from '@ant-design/icons'
@@ -20,15 +20,14 @@ function Navbar () {
     <header className='mb-10'>
       <nav className='navbarContainer flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/' aria-label='Home'>
-          {/* <Image
-            src='/assets/basaltyapi-Photoroom.png'
+          <Image
+            src='/assets/basaltyapilogo.jpg'
             alt='Bas Yapı Logo'
             width={200}
             height={300}
             className='basLogoContiner cursor-pointer'
             priority // SEO için önemli: Sayfa yüklendiğinde logonun öncelikli yüklenmesini sağlar
-          /> */}
-          LOGO
+          />
         </Link>
         <div
           className='menuLogo'
