@@ -13,7 +13,7 @@ function About () {
         <title>Hakkımızda - Baş Altyapı İnşaat A.Ş.</title>
         <meta
           name='description'
-          content='Baş Altyapı İnşaat Anonim Şirketi olarak altyapı inşaat projelerinde profesyonel hizmet sunuyoruz. Projelerimiz hakkında bilgi alın.'
+          content='Baş Altyapı İnşaat Şirketi olarak altyapı inşaat projelerinde profesyonel hizmet sunuyoruz. Projelerimiz hakkında bilgi alın.'
         />
         <meta
           name='keywords'
@@ -32,7 +32,7 @@ function About () {
               Hakkımızda
             </p>
             <h1 className='textAboutContainer py-4'>
-              Baş Altyapı İnşaat Anonim Şirketi
+              Baş Altyapı İnşaat Şirketi
             </h1>
             <Text />
             <Link href='/#projects'>
@@ -48,7 +48,7 @@ function About () {
             <Image
               src={AboutImg}
               className='rounded-xl'
-              alt='Baş Altyapı İnşaat şirketine ait bina görseli'
+              alt='Baş Altyapı İnşaat şirketine ait görsel'
             />
           </div>
         </div>
