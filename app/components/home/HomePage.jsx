@@ -1,34 +1,25 @@
-import Image from 'next/image'
-import Whatsapp from '../../../public/assets/whatsapp.gif'
 import './style.css'
+import { WhatsAppOutlined } from '@ant-design/icons'
 
 export default function HomePage () {
   return (
-    <main className='container'>
+    <main className='container homePageWrapper'>
       <header className='title'>
         <h1>
-          {' '}
-          ALTYAPI İNŞAATI YAPIM HİZMETLERİMİZ TÜRKİYE GENELİ HİZMET VERMEKTEYİZ
+          ALTYAPI İNŞAATI OLARAK KALİTEYİ İNŞA EDİYOR, GELECEĞİ ŞEKİLLENDİRİYORUZ.
         </h1>
       </header>
-      <p className='text'>
-        YAĞMURSUYU ATIKSU DENAJ İÇMESUYU HATTI YAPIMI VE GENİŞ İŞ MAKİNASI
-        PARKURU İLE HİZMETİNİZDEYİZ
-      </p>
-      <section className='container-botton'>
+      <section>
         <div className='whatsapp-icon'>
           <a
+            className='linkWrapper'
             href=' https://wa.me/905510529516'
             target='blank'
             rel='noopener noreferrer'
             aria-label='WhatsApp üzerinden bizimle iletişime geçin'
           >
-            <Image
-              width={96}
-              height={96}
-              src={Whatsapp}
-              alt='WhatsApp İkonu'
-            />
+            <WhatsAppOutlined className='whatsapp' />
+            <p>Bize ulaşın</p>
           </a>
         </div>
       </section>

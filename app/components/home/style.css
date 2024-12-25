@@ -26,6 +26,20 @@
   z-index: 1000;
   right: 8px;
   bottom: 16px;
+  padding: 12px 20px;
+  border-radius: 40px;
+  color: white;
+  background-color: #002050;
+  font-weight: bold;
+}
+.linkWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.whatsapp {
+  color: #25d366;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
@@ -53,6 +67,6 @@
   }
 
   .whatsapp-icon {
-    width: 72px;
+    padding: 8px 15px;
   }
 }
