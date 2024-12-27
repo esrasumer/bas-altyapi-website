@@ -4,10 +4,10 @@ export default function Footer () {
   return (
     <footer className='footerContainer'>
       <div>
-        <p className='footerCompanyName'>BAŞ ALTYAPI İNŞAAT SAN.TİC.LTD.ŞTİ</p>
+        <p>BAŞ ALTYAPI İNŞAAT SAN.TİC.LTD.ŞTİ</p>
       </div>
-      <address className='footerAddress'>
-        <a href='mailto:info@basaltyapi.com' className='footerText'>
+      <address>
+        <a href='mailto:esrasumer28@gmail.com' className='footerText'>
           info@basaltyapi.com
         </a>
         <p className='footerText'>
