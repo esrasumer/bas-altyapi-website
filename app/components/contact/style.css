@@ -2,21 +2,6 @@ body {
   position: relative;
 }
 
-body::before {
-  content: '';
-  background-image: url('../../../public/assets/background.webp');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  opacity: 0.09;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-
 .sendButton {
   border: 1px solid #002050;
   padding: 10px;

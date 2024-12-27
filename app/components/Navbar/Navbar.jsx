@@ -18,66 +18,71 @@ function Navbar () {
 
   return (
     <header className='mb-10'>
-      <nav className='navbarContainer flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/' aria-label='Home'>
-          <Image
-            src='/assets/basaltyapilogo.jpg'
-            alt='Bas Yapı Logo'
-            width={200}
-            height={300}
-            className='basLogoContiner cursor-pointer'
-            priority // SEO için önemli: Sayfa yüklendiğinde logonun öncelikli yüklenmesini sağlar
-          />
-        </Link>
-        <div
-          className='menuLogo'
-          onClick={handleNav}
-          aria-label='Toggle navigation menu'
-        >
-          <RxHamburgerMenu size={25} />
+      <nav className='navbarContainer'>
+        <div className='flex justify-between items-center py-4 px-4 md:px-10'>
+          <Link href='/' aria-label='Home'>
+            <Image
+              src='/assets/basaltyapiLogo.png'
+              alt='Bas Yapı Logo'
+              width={200}
+              height={300}
+              className='basLogoContiner cursor-pointer'
+              priority // SEO için önemli: Sayfa yüklendiğinde logonun öncelikli yüklenmesini sağlar
+            />
+          </Link>
+          <div
+            className='menuLogo'
+            onClick={handleNav}
+            aria-label='Toggle navigation menu'
+          >
+            <RxHamburgerMenu size={25} />
+          </div>
+          <NavbarMenu />
         </div>
-        <NavbarMenu />
+        <div className='title w-full text-center mt-4 text-white'>
+          ALTYAPI İNŞAATI OLARAK KALİTEYİ İNŞA EDİYOR, &nbsp; GELECEĞİ
+          ŞEKİLLENDİRİYORUZ.
+        </div>
       </nav>
 
       {/* Mobile Menu */}
       <div
-  className={`${
-    nav
-      ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-50 dark:bg-slate-800 p-10 z-[1000]'
-      : 'fixed left-[-100%] top-0 p-10 bg-slate-50 dark:bg-slate-800'
-  }`}
->
-  {/* Close Button */}
-  <div className='flex w-full items-center pt-3'>
-    <button
-      onClick={handleNav}
-      className='closeIcon rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer text-black dark:text-white'
-      aria-label='Close menu'
-    >
-      <CloseOutlined />
-    </button>
-  </div>
+        className={`${
+          nav
+            ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-50 dark:bg-slate-800 p-10 z-[1000]'
+            : 'fixed left-[-100%] top-0 p-10 bg-slate-50 dark:bg-slate-800'
+        }`}
+      >
+        {/* Close Button */}
+        <div className='flex w-full items-center pt-3'>
+          <button
+            onClick={handleNav}
+            className='closeIcon rounded-full shadow-lg ml-auto shadow-gray-400 p-3 cursor-pointer text-black dark:text-white'
+            aria-label='Close menu'
+          >
+            <CloseOutlined />
+          </button>
+        </div>
 
-  {/* Navigation Links */}
-  <div className='py-4 flex flex-col'>
-    <ul className='uppercase'>
-      {NAVBAR_LINKS.map(link => (
-        <li
-          key={link.href}
-          onClick={() => setNav(false)}
-          className='py-4 text-sm text-black dark:text-white'
-        >
-          <Link href={link.href}>
-            <div aria-label={`Navigate to ${link.label}`}>
-              {link.label}
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
-
+        {/* Navigation Links */}
+        <div className='py-4 flex flex-col'>
+          <ul className='uppercase'>
+            {NAVBAR_LINKS.map(link => (
+              <li
+                key={link.href}
+                onClick={() => setNav(false)}
+                className='py-4 text-sm text-black dark:text-white'
+              >
+                <Link href={link.href}>
+                  <div aria-label={`Navigate to ${link.label}`}>
+                    {link.label}
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </header>
   )
 }

@@ -4,11 +4,6 @@ import { WhatsAppOutlined } from '@ant-design/icons'
 export default function HomePage () {
   return (
     <main className='container homePageWrapper'>
-      <header className='title'>
-        <h1>
-          ALTYAPI İNŞAATI OLARAK KALİTEYİ İNŞA EDİYOR, GELECEĞİ ŞEKİLLENDİRİYORUZ.
-        </h1>
-      </header>
       <section>
         <div className='whatsapp-icon'>
           <a
