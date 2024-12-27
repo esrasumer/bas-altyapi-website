@@ -1,6 +1,7 @@
 export default function Text () {
   return (
     <div>
+      <section>
       <p className='textContainer py-2 text-gray-600'>
         Baş altyapı inşaat sektöründe uzun yıllara dayanan tecrübesiyle faaliyet
         göstermektedir. Misyonumuz, kaliteli, güvenilir ve çevreye duyarlı
@@ -20,6 +21,7 @@ export default function Text () {
         garantisiyle hizmet sunuyoruz. Daha fazla bilgi için bizimle iletişime
         geçebilir ya da projelerimizi inceleyebilirsiniz.
       </p>
+      </section>
     </div>
   )
 }

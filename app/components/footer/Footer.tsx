@@ -17,7 +17,7 @@ export default function Footer () {
       <div className='footerText'>
         <p>©2023, Başaltyapı tarafından</p>
         <a
-          href='https://sumerdev.com'
+          href='https://www.linkedin.com/in/esra-sumer/'
           target='_blank'
           rel='noopener noreferrer'
         >

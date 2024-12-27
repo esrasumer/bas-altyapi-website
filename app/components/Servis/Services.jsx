@@ -1,13 +1,14 @@
 import React from 'react'
 import './style.css'
+
 function Services () {
   const List = [
     'Peyzaj',
-    'elektrik',
-    'drenaj',
-    'içme suyu',
-    'yağmur suyu çalışmaları',
-    'kanalizasyon'
+    'Elektrik',
+    'Drenaj',
+    'İçme Suyu',
+    'Yağmur Suyu Çalışmaları',
+    'Kanalizasyon'
   ]
 
   return (
@@ -16,18 +17,15 @@ function Services () {
         {' '}
         <p className='textHead'>Hizmetlerimiz</p>
       </div>
-      <div className='box'>
-        {List.map((a, index) => (
-          <ul key={index}>
-            <li className='containerWrapper'>{a}</li>
-          </ul>
-        ))}
+      <div>
+        <ul  className='box'>
+          {List.map((a, index) => (
+            <li  key={index} className='containerWrapper'>{a}</li>
+          ))}
+        </ul>
       </div>
-      {/* <div>
-        <p className='containerWrapper'>Detaylı bilgi için lütfen arayınız.</p>
-      </div> */}
     </div>
   )
 }
 
-export default Services;
+export default Services
