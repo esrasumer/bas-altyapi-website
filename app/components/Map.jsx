@@ -4,7 +4,7 @@ function Map () {
   return (
     <div style={{ width: '100%', height: '400px' }}>
       <iframe
-        src='https://www.google.com/maps/d/embed?mid=1T98yKfITZlHL82yyCVIS7QCGZgZXs9Y&ehbc=2E312F'
+        src='https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=kavakl%C4%B1%20mahallesi%20istanbul%20caddesi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
         width='100%'
         height='100%'
         style={{ border: 0 }}
