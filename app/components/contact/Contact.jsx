@@ -82,9 +82,7 @@ const Contact = () => {
       </Head>
       <section id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-          <h1 className='textHead'>
-            BİZE ULAŞIN
-          </h1>
+          <div className='textHead'>BİZE ULAŞIN</div>
           <div className='grid lg:grid-cols-5 gap-8'>
             {/* Contact Info */}
             <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -113,6 +111,12 @@ const Contact = () => {
                   onSubmit={handleForm}
                   aria-label='İletişim formu'
                 >
+                  <div
+                    className='g-recaptcha'
+                    data-sitekey='6LdXQacqAAAAADlV98mc92BLRy_o2ykRFHOng7gu'
+                    data-action='LOGIN'
+                  ></div>
+                  <br />
                   <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                     <div className='flex flex-col'>
                       <label htmlFor='name' className='text-sm py-2'>
